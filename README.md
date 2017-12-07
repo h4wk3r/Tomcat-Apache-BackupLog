@@ -36,24 +36,20 @@ BACKUP DAY ONLY
 *	/var/www/html/archives/.htaccess 
 *	/var/www/html/archives/.htpasswd 
 
-	--------------------------------------------------------------
-        |                                                            |
-        |  Defaut                                                    |
-        |  url :           http://localhost/archives                 |
-        |  user :          .htaccess                                 |
-	|  password :      .htaccess                                 |
-        |                                                            |
-        '-------------------------------------------------------------
-        
-	  ----------------------------------------------------------
-	  |                                                        |
-	  |  Please specify if backup is  daily or weekly :        |
-	  |                                                        |
-	  |           bash '$dirscript'/backup.sh days             |
-	  |                      or                                |
-	  |           bash '$dirscript'/backup.sh weeks            |
-	  |                                                        |
-	  |    COMMAND HELP : bash '$dirscript'/backup.sh --help   |
-	  |                                                        |
-	  '---------------------------------------------------------
+
+-------------------------------------------------------------
+
+url :           http://localhost/archives
+user :          .htaccess
+password :      .htaccess
+
+-------------------------------------------------------------
+
+please specify if backup is  daily or weekly :
+
+	bash '$dirscript'/backup.sh days
+		or
+	bash '$dirscript'/backup.sh weeks
+
+	COMMAND HELP : bash '$dirscript'/backup.sh --help
 
