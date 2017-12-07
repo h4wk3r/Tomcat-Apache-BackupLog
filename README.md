@@ -6,9 +6,13 @@ BACKUP DAY ONLY
 # FIRST INSTALL 
 
 > Install APACHE2
+
 > Install TOMCAT8
+
 > recover script archive :
+
 > unzip the archive /opt :
+
 * /opt/backup.sh 
 * 	/opt/log/ 
 * 	/opt/tmp/ 
@@ -25,14 +29,16 @@ BACKUP DAY ONLY
 * 	chown -R www-data:www-data /var/www/html/archives/
 
 > Scheduled :
-	vi /etc/crontab
-	Add the lines :
+
+	- vi /etc/crontab
+	- Add the lines :
 * 		#daily backup 00h30 everyday 
 * 		0  30  *  *  *  root  /bin/bash /opt/backup.sh days >> /opt/log/backup.log 
 * 		# Weekly backup 1h00 every Sunday 
 * 		0  1   *  *  7  root  /bin/bash /opt/backup.sh weeks >> /opt/log/backup.log 
 
 > Protect access to backup with an htaccess :
+
 *	/var/www/html/archives/.htaccess 
 *	/var/www/html/archives/.htpasswd 
 
